@@ -1,0 +1,79 @@
+.home {
+  border: 1px solid #000;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../../../public/image/bg.jpeg"), lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.text {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.text p {
+  text-align: center;
+}
+.t1 {
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.t2 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.button {
+  position: absolute;
+  top: 8rem;
+  left: 10rem;
+}
+.button button {
+  border-radius: 50px;
+  background: #2d6e0f;
+  width: 200px;
+  border: none;
+  height: 50px;
+  backdrop-filter: blur(10.5px);
+  align-items: center;
+}
+.button p {
+  color: #fff;
+  display: inline;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 20px;
+}
+.arrow {
+  display: inline-block;
+  color: #fff;
+  font-size: 23px;
+  border-radius: 50%;
+  background-color: rgba(
+    91,
+    155,
+    62,
+    0.5
+  ); /* Same Green with 50% transparency */
+  width: 35px;
+  height: 35px;
+}

@@ -1,0 +1,103 @@
+.card {
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 330px;
+  height: 420px;
+  border: 1px solid #ccc;
+  margin: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* transition: transform 0.3s ease-in-out; */
+}
+.card::before{
+    content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; 
+  background: linear-gradient(0deg, #5B9B3E 5.61%, rgba(171, 211, 115, 0.10) 81.55%);
+  pointer-events: none; 
+  /* transition: opacity 0.3s ease; */
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(91, 155, 62, 0.8) 0%,
+    rgba(21, 94, 30, 0.8) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 1;
+  z-index: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* transform: translateY(100%);  */
+  transition: transform 0.3s ease;
+}
+/* .card:hover .overlay{
+    transform: translateY(0);
+
+} */
+/* .card:hover .overlay{
+    transform: translateY(0);
+
+} */
+
+.content {
+  text-align: left;
+  font-size: 18px; /* Adjust the font size as needed */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px; /* 173.684% */
+}
+.heading {
+  color: #fff;
+  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px; /* 126.667% */
+}
+.view {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 194.444% */
+  text-decoration-line: underline;
+  padding-left: 10rem;
+}
+.title{
+    color: #FFF;
+text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+font-family: Ubuntu;
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 100% */
+position: absolute;
+bottom: 10px;
+padding-left: 30px;
+}
