@@ -1,0 +1,41 @@
+.footer {
+  height: 112px;
+  width: 100%;
+  background: #c9c9c9;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 320px;
+}
+.content li {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.444px;
+  cursor: pointer;
+}
+.content li:hover {
+  /* text-decoration: underline; */
+  transform: translateY(-1px);
+  color: #2d6e0f;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.footerlogo{
+mix-blend-mode: color-burn;
+}

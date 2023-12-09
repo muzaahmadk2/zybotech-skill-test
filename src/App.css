@@ -1,0 +1,20 @@
+.search_button{
+    left: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f6f2;
+    bottom: 4rem;
+    cursor: pointer;
+    box-shadow: 0 0 0.2rem rgba(0,0,0,.5);
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: 1;
+    position: fixed;
+    border-radius: 50%;
+  }
+  .scroll{
+    
+    color: #2d6e0f;
+  }
+ 
