@@ -64,7 +64,7 @@
     background-color: #4b4b4b;
     color: white;
   }
-  @media(max-width:768px){
+  @media(max-width:990px){
 .item h3{
   font-size: 1rem;
 }

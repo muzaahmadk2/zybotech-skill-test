@@ -81,7 +81,7 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-@media (max-width:768px){
+@media (max-width:990px){
 .title{
   font-size: 26px;
   line-height: 50px;

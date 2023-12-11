@@ -76,7 +76,7 @@
 .overlay span {
   font-weight: bold;
 }
-@media (max-width:768px){
+@media (max-width:990px){
 .card{
   width: 22%;
   height: 265px;
@@ -105,5 +105,8 @@
 }
 .overlay span{
   font-size: 80%;
+}
+.card{
+  width: 35%;
 }
 }

@@ -117,14 +117,14 @@ box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
     align-items: center;
     justify-content: center;
 }
-@media (max-width:768px){
+@media (max-width:990px){
     .tag{
         font-size: 23px;
         margin-left: 40%;
     }
     .view{
         font-size: 12px;
-        left: 30rem;
+        left: 80%;
     }
     .heading{
         font-size: 20px;
@@ -158,5 +158,22 @@ box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.15);
     }
     .main{
         max-width: 95% !important;
+    }
+}
+@media (max-width:550px){
+    .container2{
+        flex-direction: column;
+
+    }
+    .image_portion{
+        width: 80%;
+    }
+    .tag{
+        font-size: 15px;
+        margin-left: 35%;
+    }
+    .container{
+        flex-direction: column;
+        gap: 1rem;
     }
 }

@@ -136,7 +136,7 @@
 .shop img {
   max-height: 100%;
 }
-@media(max-width:768px){
+@media(max-width:990px){
   .tag{
     font-size: 25px;
     margin-left: 19rem;
@@ -185,5 +185,32 @@
   .shop img{
     width: 100%;
     height: 100%;
+  }
+}
+@media(max-width:550px){
+  .container{
+    flex-direction: column;
+    align-content: center;
+  }
+  .image{
+    display: none;
+  }
+  .testimonial{
+    right: 0rem;
+    width: 100%;
+  }
+  .container2{
+    flex-direction: column;
+  }
+  .shop{
+    width: 100%;
+    height: 180px;
+  }
+  .content{
+    width: 88%;
+  }
+  .tag{
+    font-size: 15px;
+    margin-left: 40%;
   }
 }

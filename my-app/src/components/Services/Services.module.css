@@ -74,7 +74,7 @@
   object-fit: cover;
   background-position: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .tag {
     font-size: 25px;
     margin-left: 19rem;
@@ -92,5 +92,28 @@
   .ellipseImage{
     width: 280px;
     height: 280px;
+  }
+}
+@media(max-width:550px){
+  .item span{
+    font-size: 20px;
+  }
+  .item p{
+    font-size: 8px;
+  }
+  .image{
+    width: 270px;
+    height: 300px;
+  }
+  .ellipseImage{
+    width: 230px;
+    height: 230px;
+  }
+  .tag{
+    font-size: 15px;
+    margin-left: 40%;
+  }
+  .container{
+    flex-direction: column;
   }
 }

@@ -44,7 +44,7 @@ cursor: pointer;
   position: absolute;
   bottom: 0;
 }
-@media (max-width:768px){
+@media (max-width:990px){
 .card{
   width: 30%;
   height: 164px;
@@ -60,4 +60,9 @@ cursor: pointer;
   bottom: 2.5rem;
   width: 50%;
 }
+}
+@media(max-width:550px){
+  .card{
+    width: 38%;
+  }
 }
