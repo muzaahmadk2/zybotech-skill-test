@@ -39,3 +39,14 @@
 .footerlogo{
 mix-blend-mode: color-burn;
 }
+@media (max-width:768px){
+  .content{
+    width:240px
+  }
+  .footerlogo img{
+    width: 80%;
+  }
+  .logo{
+    width: 100px;
+  }
+}

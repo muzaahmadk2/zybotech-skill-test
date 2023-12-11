@@ -7,7 +7,9 @@ import { Link as ScrollLink } from "react-scroll";
 import { useLocation, useNavigate } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import AuthContext from "../Store/Auth-Context";
-import { useContext } from "react";
+import { useContext, useState } from "react";
+import { BsList } from "react-icons/bs";
+import Modal from "react-bootstrap/Modal";
 
 const NavBar = () => {
   const location = useLocation();
@@ -18,12 +20,13 @@ const NavBar = () => {
   const curr = location.pathname === "/" ? logo1 : logo2;
   const navbar = location.pathname === "/" ? navbar1 : navbar2;
   const navigate = useNavigate();
-const authCtx=useContext(AuthContext);
-const isLoggedIn=authCtx.isLoggedIn;
+  const authCtx = useContext(AuthContext);
+  const isLoggedIn = authCtx.isLoggedIn;
+  const [smShow, setSmShow] = useState(false);
 
-const logoutHandler=()=>{
-  authCtx.logout();
-}
+  const logoutHandler = () => {
+    authCtx.logout();
+  };
   const navigatetoLogin = () => {
     navigate("/login");
   };
@@ -75,6 +78,10 @@ const logoutHandler=()=>{
           </li>
         </ul>
       </div>
+      <div className={classes.modalContainer}>
+        <BsList color="black" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+       
+      </div>
       <div className={classes.icons}>
         <div>
           <CiSearch />
@@ -86,17 +93,21 @@ const logoutHandler=()=>{
             menuVariant="dark"
             drop="down-centered"
           >
-            {!isLoggedIn && <NavDropdown.Item onClick={navigatetoLogin}>
-              Log In
-            </NavDropdown.Item>}
-            {isLoggedIn && <NavDropdown.Item onClick={logoutHandler}>
-              Log Out
-            </NavDropdown.Item>}
+            {!isLoggedIn && (
+              <NavDropdown.Item onClick={navigatetoLogin}>
+                Log In
+              </NavDropdown.Item>
+            )}
+            {isLoggedIn && (
+              <NavDropdown.Item onClick={logoutHandler}>
+                Log Out
+              </NavDropdown.Item>
+            )}
           </NavDropdown>
           {/* <Link to='/login'><VscAccount /></Link>  */}
         </div>
         <div>
-          <Link to={isLoggedIn ? '/cart' : '/login'}>
+          <Link to={isLoggedIn ? "/cart" : "/login"}>
             <GrCart />
           </Link>
         </div>

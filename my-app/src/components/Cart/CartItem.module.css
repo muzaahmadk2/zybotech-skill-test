@@ -11,7 +11,7 @@
   .image{
     width: 100px;
     height: 100px;
-    margin-left: 200px;
+    margin-left: 35%;
   }
   .image img{
     width: 100%;
@@ -64,3 +64,17 @@
     background-color: #4b4b4b;
     color: white;
   }
+  @media(max-width:768px){
+.item h3{
+  font-size: 1rem;
+}
+.quantity span{
+  font-size: 1rem;
+}
+.price{
+  font-size: 1rem;
+}
+.itemprice{
+  font-size: 0.75rem;
+}
+}

@@ -77,3 +77,11 @@
   width: 35px;
   height: 35px;
 }
+@media (max-width:768px){
+  .text{
+    left: 15%;
+  }
+ .button{
+  top: 10rem;
+ }
+}

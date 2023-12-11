@@ -81,3 +81,36 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+@media (max-width:768px){
+.title{
+  font-size: 26px;
+  line-height: 50px;
+}
+.form input{
+width: 100%;
+height: 45px;
+font-size: 10px;
+}
+.loginpage{
+  width: 50%;
+}
+.eye{
+  top: 10px;
+  right: 10px;
+}
+.form button{
+  width: 85%;
+  height: 40px;
+}
+.switch{
+  font-size: 15px;
+  width: 85%;
+}
+.red{
+  font-size: 15px;
+}
+.eyeLogo{
+  width: 20px;
+  height: 20px;
+}
+}

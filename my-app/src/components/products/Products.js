@@ -20,7 +20,7 @@ const Products = () => {
   ));
   return (
     <Element name="products">
-      <Container>
+      <Container className={classes.main}>
         <h1 className={classes.tag}>Our Recent Products</h1>
         <div className={classes.container}>{pdtcts}</div>
         <span className={classes.view}>View More...</span>
