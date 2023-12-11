@@ -77,3 +77,30 @@
   width: 35px;
   height: 35px;
 }
+@media (max-width:990px){
+  .text{
+    left: 15%;
+  }
+ .button{
+  top: 10rem;
+ }
+}
+@media(max-width:550px){
+  .t1{
+    font-size: 20px;
+  }
+  .t2{
+    font-size: 25px;
+  }
+  .button button{
+    width: 150px;
+    height: 40px;
+  }
+  .button{
+    top: 6rem;
+    left: 6rem;
+  }
+  .button p{
+    font-size: 15px;
+  }
+}

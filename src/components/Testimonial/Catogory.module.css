@@ -1,59 +1,96 @@
 .tag {
-    color: #000;
-    font-family: Ubuntu;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 3rem 0 3rem 5rem;
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 3rem 0 3rem 5rem;
+}
+.catogory {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.tag2 {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70px; /* 233.333% */
+  text-transform: capitalize;
+  margin: 3rem 0 3rem 5rem;
+}
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.card {
+  width: 330px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: rgba(152, 195, 71, 0.2);
+}
+.image {
+  width: 120px;
+}
+.image img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.name {
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+@media (max-width: 990px) {
+  .tag {
+    font-size: 25px;
   }
-  .catogory{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  .tag2 {
+    font-size: 25px;
+  }
+  .card {
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+  }
+  .image {
+    width: 70px;
+  }
+  .name {
+    font-size: 12px;
+  }
+}
+@media(max-width:550px){
+  .tag{
+    font-size: 15px;
     margin-top: 5rem;
   }
   .tag2{
-    color: #000;
-font-family: Ubuntu;
-font-size: 30px;
-font-style: normal;
-font-weight: 500;
-line-height: 70px; /* 233.333% */
-text-transform: capitalize;
-margin: 3rem 0 3rem 5rem;
-
+    font-size: 15px;
+  }
+  .catogory{
+    margin-top: 0;
+    flex-direction: column;
+    gap: 1rem;
   }
   .sub{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 5rem;
+    margin-top: 0;
+    flex-direction: column;
+    gap: 4rem;
   }
-  .card{
-    width: 330px;
-    height: 100px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    background: rgba(152, 195, 71, 0.20);
-  }
-  .image{
-    width: 120px;
-  }
-  .image img{
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  .name{
-    color: #000;
-    font-family: Ubuntu;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 50px;
-    text-transform: capitalize;
-  }
+}

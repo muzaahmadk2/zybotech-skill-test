@@ -44,3 +44,25 @@ cursor: pointer;
   position: absolute;
   bottom: 0;
 }
+@media (max-width:990px){
+.card{
+  width: 30%;
+  height: 164px;
+}
+.container{
+  height: 75px;
+}
+.name{
+  font-size: 90%;
+  line-height: 50px;
+}
+.container img{
+  bottom: 2.5rem;
+  width: 50%;
+}
+}
+@media(max-width:550px){
+  .card{
+    width: 38%;
+  }
+}

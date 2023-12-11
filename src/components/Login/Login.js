@@ -96,9 +96,9 @@ const Login = () => {
                 />
                 <span className={classes.eye} onClick={togglePassword}>
                   {!showPass ? (
-                    <IoEyeOutline size={30} />
+                    <IoEyeOutline size={30} className={classes.eyeLogo}/>
                   ) : (
-                    <FaRegEyeSlash size={30} />
+                    <FaRegEyeSlash size={30} className={classes.eyeLogo}/>
                   )}
                 </span>
               </InputGroup>

@@ -39,3 +39,30 @@
 .footerlogo{
 mix-blend-mode: color-burn;
 }
+@media (max-width:990px){
+  .content{
+    width:240px
+  }
+  .footerlogo img{
+    width: 80%;
+  }
+  .logo{
+    width: 100px;
+  }
+}
+@media(max-width:550px){
+  .footerlogo img{
+    width: 65%;
+  }
+  .content{
+    width: 230px;
+  }
+  .content li{
+    font-size: 12px;
+  }
+  .logo{
+    font-size: 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

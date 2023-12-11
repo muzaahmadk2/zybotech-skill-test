@@ -1,5 +1,5 @@
 .cart {
-    max-width: 30rem;
+    /* max-width: 30rem; */
     background-color: #313131;
     color: white;
     margin: 1rem auto;
@@ -35,4 +35,12 @@ top: 17%;
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+  @media (max-width:990px){
+.cart{
+  left: 8%;
+}
+.cart h2{
+  font-size: 25px;
+}
   }

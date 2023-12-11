@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 15px 0;
+  width: 100%;
 }
 .container2 {
   display: flex;
@@ -19,7 +20,6 @@
   justify-content: space-evenly;
   margin-top: 4rem;
   border-bottom: 1px solid rgba(91, 155, 62, 0.5);
-
 }
 .overview {
   display: flex;
@@ -59,18 +59,61 @@
 }
 
 .ellipseImage {
-    width: 430px;
-    height: 430px;
-    background-color: #ABD373; /* Set the desired background color */
-    border-radius: 50%;
-    margin-top: 4.5rem;
+  width: 430px;
+  height: 430px;
+  background-color: #abd373; /* Set the desired background color */
+  border-radius: 50%;
+  margin-top: 4.5rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+@media (max-width: 990px) {
+  .tag {
+    font-size: 25px;
+    margin-left: 19rem;
   }
-  .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-position: center;
+  .item span{
+    font-size: 30px;
   }
+  .item p{
+    font-size: 12px;
+  }
+  .image{
+    width: 300px;
+    height: 350px;
+  }
+  .ellipseImage{
+    width: 280px;
+    height: 280px;
+  }
+}
+@media(max-width:550px){
+  .item span{
+    font-size: 20px;
+  }
+  .item p{
+    font-size: 8px;
+  }
+  .image{
+    width: 270px;
+    height: 300px;
+  }
+  .ellipseImage{
+    width: 230px;
+    height: 230px;
+  }
+  .tag{
+    font-size: 15px;
+    margin-left: 40%;
+  }
+  .container{
+    flex-direction: column;
+  }
+}

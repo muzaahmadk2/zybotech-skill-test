@@ -66,7 +66,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-margin-left: 4rem;
+margin-left: 15%;
 }
 .verify span{
     color: #0045A3;
@@ -89,4 +89,63 @@ cursor: pointer;
   background: linear-gradient(180deg, #ededed 0%, rgba(217, 217, 217, 0) 100%);
   width: 100%;
   height: 236px;
+}
+@media (max-width:990px){
+.title{
+  font-size: 26px;
+  line-height: 50px;
+}
+.loginpage{
+  width: 50%;
+}
+.text{
+  font-size: 9px;
+}.form{
+  width: 85%;
+}
+.form form{
+  width: 100%;
+}
+.form input{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 1rem;
+}
+.verify{
+  font-size: 10px;
+
+}
+.verify span{
+  font-size: 11px;
+}
+.button{
+  width: 85%;
+}
+.button button{
+  width: 100%;
+  height: 45px;
+}
+}
+@media(max-width:550px){
+  .loginpage{
+    left: 2rem;
+  }
+  .text{
+    font-size: 8px;
+  }
+  .title{
+    font-size: 24px;
+  }
+  .form{
+    width: 100%;
+  }
+  .form input{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .button button{
+    height: 35px;
+  }
 }

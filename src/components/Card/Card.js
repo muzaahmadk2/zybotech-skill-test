@@ -6,6 +6,7 @@ import { cartAction } from "../Store/cartSlice";
 import { useContext } from "react";
 import AuthContext from "../Store/Auth-Context";
 import { useNavigate } from "react-router";
+import { sendCartdata } from "../Store/cartSlice";
 
 const Card = (props) => {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const Card = (props) => {
         image: props.image,
         price: +props.price,
       };
-      dispatch(cartAction.addItemToCart(cartItem));
+      dispatch(sendCartdata(cartItem));
     } else {
       navigate("/login");
     }

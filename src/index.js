@@ -9,18 +9,18 @@ import { BrowserRouter } from "react-router-dom";
 import Store from "./components/Store/Store1";
 import { Provider } from "react-redux";
 import { AuthProvider } from "./components/Store/Auth-Context";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   
     <BrowserRouter>
-      <React.StrictMode>
         <AuthProvider>
       <Provider store={Store}>
         <App />
         </Provider>
         </AuthProvider>
-      </React.StrictMode>
     </BrowserRouter>
   
 );
